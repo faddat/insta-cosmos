@@ -24,3 +24,10 @@ More validation, more sentries, faster and cheaper.  Designed for use at the edg
 
 ### relayers
 * hermes
+
+
+### runtime environment
+* Arch Linux
+* docker
+* docker-compose
+
