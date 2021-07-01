@@ -13,6 +13,9 @@ Purpose built for the construction of inter-blockchain functionality.
 * sentinel
 * v-systems
 * osmosis
+* regen
+* desmos
+* stakebird
 * sif
 * luna
 * juno
