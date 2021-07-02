@@ -1,0 +1,56 @@
+version: "3.9"
+services:
+
+# the websocket is port 8090 and http is 8091
+# the witness image is used here, but you might wish to change it to the rpc image
+  blurt:
+    image: registry.gitlab.com/blurt/blurt/witness:dev
+    deploy:
+      restart_policy:
+        condition: unless-stopped
+    volumes:
+      - /plotting/blurtd:/blurtd
+
+  gaia: 
+    image: faddat/instagaia
+    deploy:
+      restart_policy:
+        condition: unless-stopped
+    volumes:
+      - /plotting/gaia:/root/.gaia
+
+
+  akash:
+    image: faddat/instakash
+    deploy:
+      restart_policy:
+        condition: unless-stopped
+
+  osmosis:
+    image: faddat/instant-osmosis
+    deploy:
+      restart_policy:
+        condition: unless-stopped
+
+
+  vsys: 
+    image: faddat/vsys
+    deploy:
+    restart_policy:
+      condition: unless-stopped
+
+        
+  juno:
+    image: faddat/instajuno
+    deploy:
+    restart_policy:
+        condition: unless-stopped
+    volumes:
+      - /plotting/juno:/root
+            
+
+
+
+    
+
+
