@@ -44,3 +44,5 @@ Yep, it can all run on a single fast machine.
 * docker
 * docker-compose
 
+### Minimum System Requirements
+* 4TB NVMe Storage
